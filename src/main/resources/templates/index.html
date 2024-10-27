@@ -3,9 +3,22 @@
 <head>
     <title>General</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/main.css}">
 </head>
-    <body>
-        <h1>General page</h1>
-        <p th:text="|Hello, ${name}! This is my first page|" />
-    </body>
+<body>
+    <div th:replace="layouts/header :: header"></div>
+
+    <div class="presentation">
+        <img src="https://mrjerryd.github.io/SitePartfolio/img/Game10%20-%20Samurai%20And%20Ninja/ninja.jpg" alt="">
+        <h2>DO you wanna look good?</h2>
+        <p>Here you can find everything what you want</p>
+    </div>
+
+    <main class="container">
+
+    </main>
+
+    <div th:replace="layouts/footer :: footer"></div>
+
+</body>
 </html>

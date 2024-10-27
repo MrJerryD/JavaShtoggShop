@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+    /*font-family: 'Montserrat', sans-serif;*/
+    /*font-weight: 400;*/
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background: #94ec5a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+/*HEADER RIGHT PART, GENERAL, ABOUT US */
+a{
+    text-decoration: none;
+    color: #fd035c;
+    transition: color 500ms ease;
+    font-size: 20px;
+}
+
+a:hover{
+    color: #cb52e7;
+}
+
+.container{
+    width: 1258px;
+    margin: 0 auto;
+}
+
+/*HEADER LOGO*/
+header.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+header .logo{
+    color: red;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+header nav a{
+    margin-left: 15px;
+}
+
+/*BLOCK ABOUT US*/
+div.block{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #cb52e7;
+    border-bottom-width: 2px;
+    background: aqua;
+    line-height: 170%;
+}
+
+/*GENERAL BLOCK */
+.presentation{
+    float: left;
+    width: 100%;
+    background: red;
+    padding: 50px 200px;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+}
+
+.presentation h2{
+    color: #fff;
+    font-size: 50px;
+    padding-top: 90px;
+}
+
+.presentation p{
+    color: #fff;
+    font-size: 20px;
+    padding-top: 7px;
+    max-width: 380px;
+}
+
+.presentation img{
+    float: right;
+    width: 300px;
+}
+/*end GENERAL BLOCk*/
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
