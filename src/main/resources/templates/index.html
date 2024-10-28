@@ -15,7 +15,20 @@
     </div>
 
     <main class="container">
-
+        <!--Если не пустой массив выводим блок с items-->
+        <div class="items" th:if="${!items.isEmpty()}">
+            <!--перебираем все элементы с items-->
+            <div th:each="el : ${items}">
+                <img th:src="${el.image}" th:alt="${el.title}">
+                <h3 th:text="${el.title}"></h3>
+                <p th:text="${el.description}"></p>
+                <span th:text="${el.price} + '$'"></span>
+            </div>
+        </div>
+        <!--если пустой, выводим блок с ошибкой как в about-->
+        <div th:if="${items.isEmpty()}" class="block">
+            <p>No games</p>
+        </div>
     </main>
 
     <div th:replace="layouts/footer :: footer"></div>

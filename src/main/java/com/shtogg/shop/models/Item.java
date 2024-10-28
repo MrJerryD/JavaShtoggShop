@@ -9,8 +9,10 @@ import jakarta.persistence.Id;
 @Entity
 public class Item {
 
-    // Id, title, description, image, price - 5 полей в таблице
+    // Получение данных с DB
 
+
+    // Id, title, description, image, price - 5 полей в таблице
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
